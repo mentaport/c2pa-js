@@ -20,6 +20,7 @@ import '../../../assets/svg/color/logos/photoshop.svg';
 import '../../../assets/svg/color/logos/solana.svg';
 import '../../../assets/svg/color/logos/truepic.svg';
 import '../../../assets/svg/color/logos/twitter.svg';
+import '../../../assets/svg/color/logos/c2pa_mentaport.svg';
 declare global {
     interface HTMLElementTagNameMap {
         'cai-icon': Icon;

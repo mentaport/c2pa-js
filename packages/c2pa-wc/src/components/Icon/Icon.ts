@@ -24,6 +24,7 @@ import '../../../assets/svg/color/logos/photoshop.svg';
 import '../../../assets/svg/color/logos/solana.svg';
 import '../../../assets/svg/color/logos/truepic.svg';
 import '../../../assets/svg/color/logos/twitter.svg';
+import '../../../assets/svg/color/logos/c2pa_mentaport.svg';
 
 declare global {
   interface HTMLElementTagNameMap {
@@ -46,6 +47,10 @@ export class Icon extends LitElement {
     {
       pattern: /photoshop/i,
       icon: html`<cai-icon-photoshop></cai-icon-photoshop>`,
+    },
+    {
+      pattern: /c2pa_mentaport/i,
+      icon: html`<cai-icon-c2pa-mentaport"></cai-icon-c2pa-mentaport>`,
     },
     {
       pattern: /adobe\sstock/i,
