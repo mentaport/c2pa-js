@@ -83,6 +83,9 @@ export class Popover extends LitElement {
   @property({ type: Boolean })
   interactive = false;
 
+  @property({ type: Boolean })
+  mentaportEnabled = false;
+
   @property({ type: String })
   trigger: string = 'mouseenter:mouseleave focus:blur';
 
@@ -174,6 +177,11 @@ export class Popover extends LitElement {
         }
         #content.interactive {
           pointer-events: auto;
+        }
+        #content.mentaport {
+          background-color: rgba(255, 255, 255, 0.9);
+          border-radius: 24px;
+          border: none;
         }
         #arrow {
           position: absolute;
@@ -327,6 +335,7 @@ export class Popover extends LitElement {
     const contentClassMap = {
       shown: this._isShown,
       interactive: this.interactive,
+      mentaport: this.mentaportEnabled,
     };
     const contentStyleMap = {
       'z-index': this.zIndex.toString(),
